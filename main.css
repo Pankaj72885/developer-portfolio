@@ -41,6 +41,8 @@ header {
 header > img {
   height: 80px;
   width: 80px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }
 
 header > nav {
@@ -73,9 +75,14 @@ main {
   font-family: var(--poppins);
 }
 
-.avatar {
+main > img {
   width: 250px;
   height: 220px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+main > img:hover {
+  transform: scale(1.1);
 }
 .title {
   font-size: 55px;
